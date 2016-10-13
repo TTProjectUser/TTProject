@@ -1,8 +1,15 @@
 {% extends "login/header.html" %}
 
 {% block content%}
-<p>Here be login screen</p>
-<p>Omg I am jinjing</p>
+<div class="well well-lg" id="akt" style="background-color:rgb(255,15,15)">Aktywnosc jest tutaj {{klik}}</div>
 
-{% include "login/includes/htmlsnippet.html" %}
+<script>
+    var URL = "{% url 'index' %}";
+
+    $(document).ready(function(){
+        $('#akt').click(function(){
+            $.post(URL);
+        });
+    });
+</script>
 {% endblock %}
