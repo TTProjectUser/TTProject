@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="98718f42-99ca-43bd-9038-b35c8731610f" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/login/templates/login/home.html" afterPath="$PROJECT_DIR$/login/templates/login/home.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="TTPoczatki.iws" />
@@ -44,8 +43,8 @@
       <file leaf-file-name="home.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/login/templates/login/home.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.73289186">
-              <caret line="36" column="12" selection-start-line="36" selection-start-column="12" selection-end-line="36" selection-end-column="12" />
+            <state vertical-scroll-proportion="0.53421634">
+              <caret line="22" column="26" selection-start-line="22" selection-start-column="26" selection-end-line="22" selection-end-column="26" />
               <folding>
                 <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#div#1;n#!!top" expanded="true" />
@@ -289,8 +288,8 @@
   </component>
   <component name="PropertiesComponent">
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="settings.editor.selected.configurable" value="editor.preferences.appearance" />
-    <property name="settings.editor.splitter.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="settings.github" />
+    <property name="settings.editor.splitter.proportion" value="0.20572917" />
     <property name="DefaultHtmlFileTemplate" value="Html5" />
     <property name="FullScreen" value="false" />
   </component>
@@ -464,7 +463,13 @@
       <option name="project" value="LOCAL" />
       <updated>1476446559162</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="testowanie pusha">
+      <created>1476446628443</created>
+      <option name="number" value="00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1476446628443</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -528,7 +533,8 @@
     <MESSAGE value="lekka zmiana w urls'ach" />
     <MESSAGE value="probuje wrzucic AJAXa z Django" />
     <MESSAGE value="postowanie i getowanie - AJAX z Django" />
-    <option name="LAST_COMMIT_MESSAGE" value="postowanie i getowanie - AJAX z Django" />
+    <MESSAGE value="testowanie pusha" />
+    <option name="LAST_COMMIT_MESSAGE" value="testowanie pusha" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -901,8 +907,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/login/templates/login/home.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.73289186">
-          <caret line="36" column="12" selection-start-line="36" selection-start-column="12" selection-end-line="36" selection-end-column="12" />
+        <state vertical-scroll-proportion="0.53421634">
+          <caret line="22" column="26" selection-start-line="22" selection-start-column="26" selection-end-line="22" selection-end-column="26" />
           <folding>
             <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#div#1;n#!!top" expanded="true" />
