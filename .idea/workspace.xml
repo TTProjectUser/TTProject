@@ -3,9 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="98718f42-99ca-43bd-9038-b35c8731610f" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/login/templates/login/home.html" afterPath="$PROJECT_DIR$/login/templates/login/home.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/TTPoczatki/urls.py" afterPath="$PROJECT_DIR$/TTPoczatki/urls.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/login/urls.py" afterPath="$PROJECT_DIR$/login/urls.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/login/views.py" afterPath="$PROJECT_DIR$/login/views.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="TTPoczatki.iws" />
@@ -48,7 +45,7 @@
         <entry file="file://$PROJECT_DIR$/login/templates/login/home.html">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.73289186">
-              <caret line="36" column="10" selection-start-line="36" selection-start-column="10" selection-end-line="36" selection-end-column="10" />
+              <caret line="36" column="12" selection-start-line="36" selection-start-column="12" selection-end-line="36" selection-end-column="12" />
               <folding>
                 <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#div#1;n#!!top" expanded="true" />
@@ -135,6 +132,7 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="UPDATE_TYPE" value="MERGE" />
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="IdeDocumentHistory">
@@ -460,7 +458,13 @@
       <option name="project" value="LOCAL" />
       <updated>1476357337296</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="postowanie i getowanie - AJAX z Django">
+      <created>1476446559162</created>
+      <option name="number" value="00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1476446559162</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -523,7 +527,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="lekka zmiana w urls'ach" />
     <MESSAGE value="probuje wrzucic AJAXa z Django" />
-    <option name="LAST_COMMIT_MESSAGE" value="probuje wrzucic AJAXa z Django" />
+    <MESSAGE value="postowanie i getowanie - AJAX z Django" />
+    <option name="LAST_COMMIT_MESSAGE" value="postowanie i getowanie - AJAX z Django" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -897,7 +902,7 @@
     <entry file="file://$PROJECT_DIR$/login/templates/login/home.html">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.73289186">
-          <caret line="36" column="10" selection-start-line="36" selection-start-column="10" selection-end-line="36" selection-end-column="10" />
+          <caret line="36" column="12" selection-start-line="36" selection-start-column="12" selection-end-line="36" selection-end-column="12" />
           <folding>
             <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#div#1;n#!!top" expanded="true" />
