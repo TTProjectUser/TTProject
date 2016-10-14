@@ -1,15 +1,43 @@
 {% extends "login/header.html" %}
 
 {% block content%}
-<div class="well well-lg" id="akt" style="background-color:rgb(255,15,15)">Aktywnosc jest tutaj {{klik}}</div>
-
+<div class="well well-lg" id="akt" style="background-color:rgb(255,15,15)">Aktywnosc, {{zmienna}}</div>
+<div class="well well-lg" id="akt2" style="background-color:rgb(23,15,15)">Kliknij zeby zrobic posta</div>
 <script>
     var URL = "{% url 'index' %}";
 
     $(document).ready(function(){
         $('#akt').click(function(){
-            $.post(URL);
+            console.log("klikniete");
+            create_get();
+        });
+        $('#akt2').click(function(){
+            console.log("post klikniete");
+            create_post();
         });
     });
+
+    function create_get() {
+        console.log("create get is working");
+        $.ajax({
+            url : "/klik",
+            type : "get",
+            success : function(data) { console.log(data); },
+            error : function(data) { console.log("error in create post"); }
+        });
+    };
+
+    {% csrf_token %}
+    function create_post() {
+        console.log("create post is working");
+        $.post(
+            "/klik",
+            {powitanie: "eloszka", user: "Ty"},
+            function(data) { console.log(data); }
+        );
+    };
+
+
+
 </script>
 {% endblock %}
