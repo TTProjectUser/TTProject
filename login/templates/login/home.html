@@ -1,8 +1,15 @@
 {% extends "login/header.html" %}
 
 {% block content%}
-<div class="well well-lg" id="akt" style="background-color:rgb(255,15,15)">Aktywnosc, {{zmienna}}</div>
+{% for itm in arr %}
+<div class="well well-lg" id="{{ itm }}" style="background-color:rgb(255,15,15)">Aktywnosc, {{zmienna}}</div>
+{% endfor %}
+
 <div class="well well-lg" id="akt2" style="background-color:rgb(23,15,15)">Kliknij zeby zrobic posta</div>
+
+{% include "login/includes/popover.html" %}
+
+
 <script>
     var URL = "{% url 'index' %}";
 
@@ -10,12 +17,20 @@
         $('#akt').click(function(){
             console.log("klikniete");
             create_get();
+            zmiana();
         });
         $('#akt2').click(function(){
             console.log("post klikniete");
             create_post();
         });
+        $('[data-toggle="popover"]').popover();
     });
+
+    function zmiana() {
+        $('#akt').html("czy dynamiczna zmiana dziala?");
+        $('#akt').height($('#akt').height()*1.1);
+    }
+
 
     function create_get() {
         console.log("create get is working");

@@ -5,7 +5,8 @@ from django.http import HttpResponse
 
 @csrf_exempt
 def index(request):
-    return render_to_response('login/home.html', {'zmienna' : 'zmienna tutaj'})
+    arr = ['akt']
+    return render_to_response('login/home.html', {'arr': arr, 'zmienna': "tutaj cos jest"})
 
 @csrf_exempt
 def home(request):
