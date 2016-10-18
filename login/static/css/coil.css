@@ -1,0 +1,70 @@
+.btn svg {
+    height: 18px;
+    width: 18px;
+    vertical-align: sub
+}
+
+.btn-primary--alt {
+    color: #fff;
+    background-color: #69be28;
+    border-color: #5da924
+}
+
+.btn-primary--alt:focus,
+.btn-primary--alt.focus {
+    color: #fff;
+    background-color: #52941f;
+    border-color: #23400d
+}
+
+.btn-primary--alt:hover {
+    color: #fff;
+    background-color: #52941f;
+    border-color: #417619
+}
+
+.btn-primary--alt:active,
+.btn-primary--alt.active,
+.open>.btn-primary--alt.dropdown-toggle {
+    color: #fff;
+    background-color: #52941f;
+    border-color: #417619
+}
+
+.btn-primary--alt:active:hover,
+.btn-primary--alt:active:focus,
+.btn-primary--alt:active.focus,
+.btn-primary--alt.active:hover,
+.btn-primary--alt.active:focus,
+.btn-primary--alt.active.focus,
+.open>.btn-primary--alt.dropdown-toggle:hover,
+.open>.btn-primary--alt.dropdown-toggle:focus,
+.open>.btn-primary--alt.dropdown-toggle.focus {
+    color: #fff;
+    background-color: #417619;
+    border-color: #23400d
+}
+
+.btn-primary--alt:active,
+.btn-primary--alt.active,
+.open>.btn-primary--alt.dropdown-toggle {
+    background-image: none
+}
+
+.btn-primary--alt.disabled:hover,
+.btn-primary--alt.disabled:focus,
+.btn-primary--alt.disabled.focus,
+.btn-primary--alt[disabled]:hover,
+.btn-primary--alt[disabled]:focus,
+.btn-primary--alt[disabled].focus,
+fieldset[disabled] .btn-primary--alt:hover,
+fieldset[disabled] .btn-primary--alt:focus,
+fieldset[disabled] .btn-primary--alt.focus {
+    background-color: #69be28;
+    border-color: #5da924
+}
+
+.btn-primary--alt .badge {
+    color: #69be28;
+    background-color: #fff
+}

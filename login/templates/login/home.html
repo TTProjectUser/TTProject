@@ -2,10 +2,10 @@
 
 {% block content%}
 {% for itm in arr %}
-<div class="well well-lg" id="{{ itm }}" style="background-color:rgb(255,15,15)">Aktywnosc, {{zmienna}}</div>
+<div class="well well-lg" id="{{ itm }}" style="background-color:#69be28">Aktywnosc, {{zmienna}}</div>
 {% endfor %}
 
-<div class="well well-lg" id="akt2" style="background-color:rgb(23,15,15)">Kliknij zeby zrobic posta</div>
+<div class="well well-lg" id="akt2" style="background-color:#bfd857">Kliknij zeby zepsuc strone</div>
 
 {% include "login/includes/popover.html" %}
 
@@ -22,6 +22,7 @@
         $('#akt2').click(function(){
             console.log("post klikniete");
             create_post();
+            $('.body').html("nic tu nie ma");
         });
         $('[data-toggle="popover"]').popover();
     });
