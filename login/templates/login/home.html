@@ -2,10 +2,11 @@
 
 {% block content%}
 {% for itm in arr %}
-<div class="well well-lg" id="{{ itm }}" style="background-color:#69be28">Aktywnosc, {{zmienna}}</div>
+<!--<div class="well well-lg" id="{{ itm }}" style="background-color:#69be28">{{itm.typ}}, start: {{itm.start}}, koniec: {{itm.end}}</div>-->
+<div class="well well-lg" id="{{ itm }}" style="background-color:#69be28">{{itm.typ}}, start: {{itm.start}}, koniec: {{itm.end}}</div>
 {% endfor %}
 
-<div class="well well-lg" id="akt2" style="background-color:#bfd857">Kliknij zeby zepsuc strone</div>
+<!--<div class="well well-lg" id="akt2" style="background-color:#bfd857">Kliknij zeby zepsuc strone</div>-->
 
 {% include "login/includes/popover.html" %}
 

@@ -6,6 +6,7 @@ class Activity(models.Model):
     start = models.DateTimeField()
     end = models.DateTimeField()
 
-    def __str__(self):
-        return self.typ
+
+    # def __str__(self):
+    #    return self.typ
 
