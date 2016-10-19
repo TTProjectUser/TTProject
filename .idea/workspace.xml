@@ -1,12 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="98718f42-99ca-43bd-9038-b35c8731610f" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/login/templates/login/includes/hours.html" />
+    <list default="true" id="98718f42-99ca-43bd-9038-b35c8731610f" name="Default" comment="dynamiczne generowanie poniedzialowych aktywnosci">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/login/static/css/coil.css" afterPath="$PROJECT_DIR$/login/static/css/coil.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/login/templates/login/header.html" afterPath="$PROJECT_DIR$/login/templates/login/header.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db.sqlite3" afterPath="$PROJECT_DIR$/db.sqlite3" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/login/templates/login/home.html" afterPath="$PROJECT_DIR$/login/templates/login/home.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/login/templates/login/includes/popover.html" afterPath="$PROJECT_DIR$/login/templates/login/includes/popover.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/login/templates/login/includes/hours.html" afterPath="$PROJECT_DIR$/login/templates/login/includes/hours.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/login/views.py" afterPath="$PROJECT_DIR$/login/views.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
@@ -48,7 +47,7 @@
         <entry file="file://$PROJECT_DIR$/login/static/css/coil.css">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="65" column="0" selection-start-line="65" selection-start-column="0" selection-end-line="65" selection-end-column="0" />
+              <caret line="71" column="8" selection-start-line="71" selection-start-column="8" selection-end-line="71" selection-end-column="8" />
               <folding />
             </state>
           </provider>
@@ -57,8 +56,8 @@
       <file leaf-file-name="views.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/login/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.47142857">
-              <caret line="18" column="29" selection-start-line="18" selection-start-column="29" selection-end-line="18" selection-end-column="29" />
+            <state vertical-scroll-proportion="0.5285714">
+              <caret line="34" column="46" selection-start-line="34" selection-start-column="46" selection-end-line="35" selection-end-column="41" />
               <folding>
                 <element signature="e#0#55#0" expanded="true" />
               </folding>
@@ -79,8 +78,8 @@
       <file leaf-file-name="header.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/login/templates/login/header.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-22.419355">
-              <caret line="52" column="85" selection-start-line="52" selection-start-column="85" selection-end-line="52" selection-end-column="85" />
+            <state vertical-scroll-proportion="-8.5161295">
+              <caret line="33" column="18" selection-start-line="33" selection-start-column="18" selection-end-line="33" selection-end-column="18" />
               <folding>
                 <element signature="n#style#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -92,8 +91,8 @@
       <file leaf-file-name="home.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/login/templates/login/home.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-3.548387">
-              <caret line="5" column="100" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="100" />
+            <state vertical-scroll-proportion="-2.8387096">
+              <caret line="4" column="17" selection-start-line="4" selection-start-column="14" selection-end-line="4" selection-end-column="17" />
               <folding>
                 <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
               </folding>
@@ -104,8 +103,8 @@
       <file leaf-file-name="hours.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/login/templates/login/includes/hours.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-7.806452">
-              <caret line="11" column="0" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
+            <state vertical-scroll-proportion="-6.387097">
+              <caret line="9" column="45" selection-start-line="9" selection-start-column="45" selection-end-line="9" selection-end-column="45" />
               <folding>
                 <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#div#1;n#!!top" expanded="true" />
@@ -116,7 +115,6 @@
                 <element signature="n#style#0;n#div#6;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#div#7;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#div#8;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#9;n#!!top" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -187,11 +185,11 @@
         <option value="$PROJECT_DIR$/login/tests.py" />
         <option value="$PROJECT_DIR$/login/models.py" />
         <option value="$PROJECT_DIR$/login/templates/login/includes/popover.html" />
-        <option value="$PROJECT_DIR$/login/templates/login/home.html" />
         <option value="$PROJECT_DIR$/login/templates/login/header.html" />
         <option value="$PROJECT_DIR$/login/static/css/coil.css" />
-        <option value="$PROJECT_DIR$/login/templates/login/includes/hours.html" />
+        <option value="$PROJECT_DIR$/login/templates/login/home.html" />
         <option value="$PROJECT_DIR$/login/views.py" />
+        <option value="$PROJECT_DIR$/login/templates/login/includes/hours.html" />
       </list>
     </option>
   </component>
@@ -644,7 +642,13 @@
       <option name="project" value="LOCAL" />
       <updated>1476871518614</updated>
     </task>
-    <option name="localTasksCounter" value="20" />
+    <task id="LOCAL-00020" summary="dynamiczne generowanie poniedzialowych aktywnosci">
+      <created>1476878647074</created>
+      <option name="number" value="00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1476878647074</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -691,7 +695,8 @@
     <MESSAGE value="sprawdzam mozliwosci jquery" />
     <MESSAGE value="zmiana css, dodanie modelu&#10;" />
     <MESSAGE value="dodanie kawalka kodu, ktory mieli dane z modelu i wrzuca do jinja'y&#10;" />
-    <option name="LAST_COMMIT_MESSAGE" value="dodanie kawalka kodu, ktory mieli dane z modelu i wrzuca do jinja'y&#10;" />
+    <MESSAGE value="dynamiczne generowanie poniedzialowych aktywnosci" />
+    <option name="LAST_COMMIT_MESSAGE" value="dynamiczne generowanie poniedzialowych aktywnosci" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1080,14 +1085,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/login/models.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="7" column="0" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/login/templates/login/includes/popover.html">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-2.8387096">
@@ -1098,8 +1095,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/login/templates/login/header.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-22.419355">
-          <caret line="52" column="85" selection-start-line="52" selection-start-column="85" selection-end-line="52" selection-end-column="85" />
+        <state vertical-scroll-proportion="-8.5161295">
+          <caret line="33" column="18" selection-start-line="33" selection-start-column="18" selection-end-line="33" selection-end-column="18" />
           <folding>
             <element signature="n#style#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -1109,8 +1106,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/login/templates/login/home.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-3.548387">
-          <caret line="5" column="100" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="100" />
+        <state vertical-scroll-proportion="-2.8387096">
+          <caret line="4" column="17" selection-start-line="4" selection-start-column="14" selection-end-line="4" selection-end-column="17" />
           <folding>
             <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
           </folding>
@@ -1120,15 +1117,15 @@
     <entry file="file://$PROJECT_DIR$/login/static/css/coil.css">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="65" column="0" selection-start-line="65" selection-start-column="0" selection-end-line="65" selection-end-column="0" />
+          <caret line="71" column="8" selection-start-line="71" selection-start-column="8" selection-end-line="71" selection-end-column="8" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/login/templates/login/includes/hours.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-7.806452">
-          <caret line="11" column="0" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
+        <state vertical-scroll-proportion="-6.387097">
+          <caret line="9" column="45" selection-start-line="9" selection-start-column="45" selection-end-line="9" selection-end-column="45" />
           <folding>
             <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#div#1;n#!!top" expanded="true" />
@@ -1139,15 +1136,22 @@
             <element signature="n#style#0;n#div#6;n#!!top" expanded="true" />
             <element signature="n#style#0;n#div#7;n#!!top" expanded="true" />
             <element signature="n#style#0;n#div#8;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#9;n#!!top" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/login/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="7" column="0" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/login/views.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.47142857">
-          <caret line="18" column="29" selection-start-line="18" selection-start-column="29" selection-end-line="18" selection-end-column="29" />
+        <state vertical-scroll-proportion="0.5285714">
+          <caret line="34" column="46" selection-start-line="34" selection-start-column="46" selection-end-line="35" selection-end-column="41" />
           <folding>
             <element signature="e#0#55#0" expanded="true" />
           </folding>

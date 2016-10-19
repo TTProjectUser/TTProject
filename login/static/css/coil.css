@@ -70,8 +70,9 @@ fieldset[disabled] .btn-primary--alt.focus {
 }
 
 .puste {
-    background-color: #fff;
+    background-color: #f6f6f6;
     margin-bottom: 0px;
+    border: none;
     padding: 0px;
 }
 

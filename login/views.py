@@ -2,6 +2,7 @@ from django.shortcuts import render, render_to_response
 from django.views.decorators.csrf import csrf_exempt
 from django.http import HttpResponse
 from .models import Activity
+import datetime
 
 
 def dt_to_num(dataczas):
@@ -15,9 +16,13 @@ def dt_to_hour(dataczas):
 @csrf_exempt
 def index(request):
 
-    arr_act = Activity.objects.all()
+    now = datetime.datetime.now()
+    # now.weekday() - 0 = monday, 6 = sunday
+
+    arr_act = Activity.objects.filter(start__date=datetime.datetime(2016, 10, 18))
     arr_act.order_by('start')
     new_arr = list()
+    kalendarz = list()
 
     for i in range(0, arr_act.count()):
         if i == 0:
@@ -43,17 +48,10 @@ def index(request):
         else:
             new_arr.append({"typ": "puste",
                             "klasa": "puste",
-                            "start": dt_to_num(arr_act[i].end),
-                            "end": 1,
+                            "start": dt_to_hour(arr_act[i].end),
+                            "end": "18:00",
                             "dur": (1 - dt_to_num(arr_act[i].end)) * 800
                             })
-
-    new_act = Activity()
-    new_act.start = 0
-    new_act.end = 1
-    new_act.typ = "Wylacznie kompa"
-
-    # arr.append(new_act)
 
     return render_to_response('login/home.html', {'arr': new_arr, 'zmienna': "tutaj cos jest"})
 
