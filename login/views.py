@@ -4,6 +4,14 @@ from django.http import HttpResponse
 from .models import Activity
 
 
+def dt_to_num(dataczas):
+    return ((dataczas.hour + dataczas.minute / 60) - 8) / 10
+
+
+def dt_to_hour(dataczas):
+    return str(dataczas.hour) + ":" + str(dataczas.minute)
+
+
 @csrf_exempt
 def index(request):
 
@@ -13,8 +21,32 @@ def index(request):
 
     for i in range(0, arr_act.count()):
         if i == 0:
-            new_arr.append({"typ": "puste", "start": 0, "end": arr_act[0].start})
-        new_arr.append({"typ": arr_act[i].typ, "start": arr_act[i].start, "end": arr_act[i].end})
+            new_arr.append({"typ": "puste",
+                            "klasa": "puste",
+                            "start": "8:00",
+                            "end": dt_to_hour(arr_act[0].start),
+                            "dur": dt_to_num(arr_act[0].start) * 800
+                            })
+        new_arr.append({"typ": arr_act[i].typ,
+                        "klasa": "pelne",
+                        "start": dt_to_hour(arr_act[i].start),
+                        "end": dt_to_hour(arr_act[i].end),
+                        "dur": (dt_to_num(arr_act[i].end) - dt_to_num(arr_act[i].start)) * 800
+                        })
+        if i != arr_act.count() - 1:
+            new_arr.append({"typ": "puste",
+                            "klasa": "puste",
+                            "start": dt_to_hour(arr_act[i].end),
+                            "end": dt_to_hour(arr_act[i + 1].start),
+                            "dur": (dt_to_num(arr_act[i + 1].start) - dt_to_num(arr_act[i].end)) * 800
+                            })
+        else:
+            new_arr.append({"typ": "puste",
+                            "klasa": "puste",
+                            "start": dt_to_num(arr_act[i].end),
+                            "end": 1,
+                            "dur": (1 - dt_to_num(arr_act[i].end)) * 800
+                            })
 
     new_act = Activity()
     new_act.start = 0

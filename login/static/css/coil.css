@@ -68,3 +68,15 @@ fieldset[disabled] .btn-primary--alt.focus {
     color: #69be28;
     background-color: #fff
 }
+
+.puste {
+    background-color: #fff;
+    margin-bottom: 0px;
+    padding: 0px;
+}
+
+.pelne {
+    background-color: #69be28;
+    margin-bottom: 0px;
+    padding: 0px;
+}
