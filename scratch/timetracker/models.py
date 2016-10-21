@@ -18,6 +18,7 @@ class Activity(models.Model):
         return self.started - self.ended
 
 
+    @property
     def get_day_abbrv(self):
         return self.started.strftime('%a')
 

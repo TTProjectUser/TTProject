@@ -21,7 +21,7 @@
 			  <div class="col-sm-12">
 				  <br>
 				  <center>
-				  <h3>Here be header text</h3>
+				  <h3>Hello {{ request.user }}!</h3>
 				  </center>
 			  </div>
 		</div>
@@ -43,19 +43,26 @@
                     <table class="table table-bordered">
                         <thead>
                             <th class="col-sm-1">Hour</th>
-                            <th class="col-sm-2">Mon</th>
-                            <th class="col-sm-2">Tue</th>
-                            <th class="col-sm-2">Wen</th>
-                            <th class="col-sm-2">Thu</th>
-                            <th class="col-sm-2">Fri</th>
+                            {% for weekday in weekdays %}
+                                <th class="col-sm-2">{{ weekday }}</th>
+                            {% endfor %}
                         </thead>
                         <tbody>
                             <tr>
                                 <td class="col-sm-1">
                                     {% for hour in hours %}
-                                        <div class="puste" style="height: 80px; border-bottom: 1px solid #e3e3e3">{{ hour }}</div>
+                                        <div class="whatever" style="height: 80px; border-bottom: 1px solid #e3e3e3">{{ hour }}</div>
                                     {% endfor %}
                                 </td>
+                                {% for weekday in weekdays %}
+                                <td class="col-sm-1">
+                                    {% for activity in activites %}
+                                        {% ifequal activity.get_day_abbrv weekday %}
+                                            <div class="whatever" style="height: 80px; border-bottom: 1px solid #e3e3e3">ha</div>
+                                        {% endifequal %}
+                                    {% endfor %}
+                                </td>
+                                {% endfor %}
                             </tr>
                         </tbody>
                     </table>

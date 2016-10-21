@@ -3,6 +3,8 @@ from django.utils import timezone
 from .models import Activity
 import datetime
 
+WEEKDAYS = ('Mon', 'Tue', 'Wed', 'Thu', 'Fri')
+
 def calendar_view(request):
 
     def get_current_week(date):
@@ -18,7 +20,6 @@ def calendar_view(request):
     first_day, last_day = get_current_week(timezone.now())
     day_hours = get_hours(20)
     activites = Activity.objects.filter(user=request.user)
-    weekdays = set(sorted([act.get_day_abbrv() for act in activites]))
-    return render(request, 'timetracker/base.html', {'activites': activites, 'weekdays': weekdays,
+    return render(request, 'timetracker/base.html', {'activites': activites, 'weekdays': WEEKDAYS,
                                                      'first_day': first_day, 'last_day': last_day,
                                                      'hours': day_hours})
