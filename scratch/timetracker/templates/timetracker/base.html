@@ -34,7 +34,7 @@
                 </div>
             </div>
             <div class="col-sm-2">
-                <h4>10 Oct - 17 Oct 2016</h4>
+                <h4>{{ first_day }} - {{ last_day }}</h4>
             </div>
         </div>
         <div class="row">
@@ -49,13 +49,15 @@
                             <th class="col-sm-2">Thu</th>
                             <th class="col-sm-2">Fri</th>
                         </thead>
-                        {% for activity in activites %}
-                            <thead>
-                                <th class="col-sm-2">{{activity.user}}</th>
-                                <th class="col-sm-2">{{activity.started}}</th>
-                                <th class="col-sm-2">{{activity.ended}}</th>
-                            </thead>
-                        {% endfor %}
+                        <tbody>
+                            <tr>
+                                <td class="col-sm-1">
+                                    {% for hour in hours %}
+                                        <div class="puste" style="height: 80px; border-bottom: 1px solid #e3e3e3">{{ hour }}</div>
+                                    {% endfor %}
+                                </td>
+                            </tr>
+                        </tbody>
                     </table>
                 </div>
             </div>
