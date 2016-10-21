@@ -53,7 +53,7 @@ def index(request):
                             "dur": (1 - dt_to_num(arr_act[i].end)) * 800
                             })
 
-    return render_to_response('login/home.html', {'arr': new_arr, 'zmienna': "tutaj cos jest"})
+    return render_to_response('login/main.html', {'arr': new_arr, 'zmienna': "tutaj cos jest"})
 
 @csrf_exempt
 def home(request):

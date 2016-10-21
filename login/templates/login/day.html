@@ -1,21 +1,13 @@
-{% extends "login/header.html" %}
-
-{% block content%}
-
 {% for act in arr %}
 <div class="well well-lg {{act.klasa}} popover-markup" id="{{ act }}" style="height: {{act.dur}}px">
-    {% if act.klasa = "pelne" %}
+    {% if act.klasa == "pelne" %}
     <b>{{act.typ}}</b>, start: {{act.start}}, koniec: {{act.end}}
     {% endif %}
 </div>
 {% include "login/includes/popover.html" %}
 {% endfor %}
 
-
 <!--<div class="well well-lg" id="akt2" style="background-color:#bfd857">Kliknij zeby zepsuc strone</div>-->
-
-
-
 
 <script>
 
@@ -74,7 +66,4 @@
         );
     };
 
-
-
 </script>
-{% endblock %}
